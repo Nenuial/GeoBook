@@ -1,0 +1,89 @@
+# Forme du travail
+
+## La mise en page
+
+Votre travail de maturité est le fruit de nombreuses heures de recherche, compilation, rédaction, et bien d'autres tâches encore. Le résultat de ce travail conséquent mérite d'être mis en valeur. Ce n'est pas parce que le contenu est excellent que la forme peut être négligée. Le but de ce chapitre est de rappeler les règles d'usages pour la présentation d'un TM.  
+
+## Le format
+
+Le TM est présenté au format <span style="font-variant:small-caps;">A4</span>. Il est habituel de prévoir des marges de 2 à 3cm. Comme indiqué dans les *Directives de présentation du travail de maturité* : "une marge de reliure doit être prévue à gauche". Cela signifie que la marge gauche du travail est environ 0.5 cm plus large que celle de droite pour tenir compte de la reliure du travail.
+
+### La numérotation des pages
+Les pages du TM doivent être numérotées à l'exception de la page de titre et de la table des matières. Les numéros de pages sont placés en bas à droite ou au centre de la page.
+
+### Les styles
+
+L'utilisation des styles dans <span style="font-variant:small-caps;">Microsoft Word</span> pour la rédaction d'un document de l'envergure du TM est essentielle. Les styles permettent une mise en page uniforme tout au long du document. Ils permettent également la création d'une table des matières automatique.
+
+## Les titres et sous-titres
+
+Les titres et sous-titres reflètent l'organisation logique du TM. Le niveau du titre (titre, sous-titre, sous-sous-titre, etc.) est reflété dans sa présentation (taille de la police de caractère, gras, italique, etc.).
+
+Tous les titres de premier niveau (exemples: Introduction, Problématique, Conclusion, Bibliographie, etc.) commencent sur une nouvelle page. Les styles proposent une option qui automatise ce comportement.
+
+Un espace suffisant (environ 12pt) est prévu avant et après les titres. L'espace avant est toujours supérieur à l'espace après. En fonction du niveau de titre, cet espace peut être plus important.
+
+
+## Les paragraphes
+
+Les paragraphes permettent de refléter l'organisation logique de la pensée. Chaque paragraphe présente une idée, un concept. La division du texte en paragraphes permet de faciliter la lecture.
+
+Les paragraphes sont justifiés. On sépare les paragraphes par un espace d'environ 6pt. La première ligne d'un paragraphe peut-être indentée, mais il ne s'agit pas d'une obligation.
+
+## Les figures et tableaux
+
+Les figures et les tableaux permettent d'illustrer (au sens large du terme) les propos du texte. Ces "illustrations" sont là pour appuyer un argument. Si le texte ne fait pas référence à une illustration, il faut se poser la question de l'utilité de celle-ci.
+
+Avec les moyens de recherches modernes, il est aisé de trouver une illustration pour presque n'importe quel mot-clé. Portez une attention particulièrement aux images réalisées par des tiers. Posez-vous les questions suivantes:
+
+- Suis-je incapable de faire cette illustration moi-même ?
+- Cette illustration est-elle d'une qualité (résolution) suffisante pour l'impression ?
+- Suis-je en mesure d'expliquer le contenu de l'illustration ?
+
+Dans le TM, chaque figure ou tableau est numéroté et accompagné d'une brève légende avec une éventuelle référence à la source. Portez une attention particulière à la mise en forme de vos tableaux: celle-ci doit être uniforme et cohérente.
+
+## Les règles typographiques
+
+### La police de caractères
+
+Le choix de la police de caractères du TM est libre. Des options *standards* sont <span style="font-variant:small-caps;">Arial</span> 12pt et <span style="font-variant:small-caps;">Times New Roman</span> 14pt. Choisissez une police de caractères qui vous plaise, mais évitez les aspects trop exotiques!
+
+### Les espacements
+
+Il existe des règles d'usage dans chaque langue concernant l'espacement. <span style="font-variant:small-caps;">Microsoft Word</span> insert, en principe, les bonnes espaces en fonction du signe de ponctuation utilisé. La table @tbl-punctuation résume les espaces à utiliser pour les principaux signes de ponctuation.
+
+Il existe trois types d'espaces différentes : l'espace sécable, l'espace insécable et l'espace fine. L'espace sécable est une espace qui peut être coupée en fin de ligne. L'espace insécable est une espace qui ne peut être divisée en fin de ligne. Sous *Windows* l'espace insécable s'obtient par la combinaison de touches *Alt + 255* et sous <span style="font-variant:small-caps;">Mac OS X</span> la combinaison est *Alt (option) + barre d'espacement*. L'espace fine est une espace insécable plus étroite. <span style="font-variant:small-caps;">Microsoft Word</span> ne connait pas cette espace et on la remplace généralement par une espace insécable.
+
+```{r}
+#| label: tbl-punctuation
+#| tbl-cap: Règles pour les espaces
+#| echo: false
+
+tibble::tribble(
+  ~"Signe de ponctuation",      ~" ",   ~"espace avant",  ~"espace après",
+  "Point",                      ".",   "aucun",          "sécable",
+	"Point d'exclamation",        "!",   "fine",           "sécable",
+	"Point d'interrogation",      "?",   "fine",           "sécable",
+	"Point de suspension",        "…",   "aucune",         "sécable",
+	"Virgule",                    ",",   "aucune",         "sécable",
+	"Point virgule",              ";",   "insécable",      "sécable",
+	"Deux points",                ":",   "fine",           "sécable",
+	"Trait d'union",              "−",   "aucune",         "aucune",
+	"Tiret",                      "–",  "sécable",        "sécable",
+	"Guillemet ouvrant",          "«",   "sécable",        "fine",
+	"Guillemet fermant",          "»",   "fine",           "sécable",
+	"Guillemet anglais ouvrant",  "“",   "sécable",        "aucune",
+	"Guillemet anglais fermant",  "”",   "aucune",         "sécable") |> 
+  kableExtra::kbl(booktabs = T, linesep = "") |> 
+  kableExtra::row_spec(c(4, 7, 9), hline_after = TRUE)
+```
+
+### Les notes de bas de page
+
+Les notes de bas de page permettent de préciser un terme ou une idée. Dans le cadre du TM, on utilise également les notes de bas de page pour indiquer les références des sources utilisées.
+
+Les notes de bas de page se placent avant tous signes de ponctuation. Donc à la fin d'une phrase la note se place avant le point final!
+
+## La touche personnelle
+
+Les *Directives de présentation du travail de maturité* offrent une large latitude en ce qui concerne la mise en forme du travail de maturité. Chacun doit se sentir libre d'apporter sa touche personnelle, que ce soit avec un choix de police de caractère sensiblement différent ou une mise en forme des titres et sous-titres particulière par exemple.

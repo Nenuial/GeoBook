@@ -1,0 +1,71 @@
+# Structure du travail
+
+## Les chapitres
+
+Le travail de maturité est organisé par chapitre. Cette structure permet d'organiser la réflexion qui anime le TM. Chaque chapitre peut être subdivisé en plusieurs sous-chapitres lorsque cela s'avère nécessaire. De même les sous-chapitres peuvent également être subdivisés. Une structure avec plus de trois niveaux n'est cependant pas recommandée pour un travail de l'envergure du TM.
+
+Le TM contiendra, en plus des annexes, au minimum les chapitres suivants:
+
+### L'introduction
+
+L'introduction expose le contexte général du TM. L'introduction permet de défendre le choix du sujet et d'expliquer ses motivations personnelles. On y trouve également un bref résumé des points essentiels qui seront traités dans le TM (sous forme de table des matières commentée par exemple).
+
+La majeure partie de l'introduction se rédige une fois que le contenu du TM est bien avancé. Il est impossible de résumer les points essentiels du TM avant que celui-ci ne soit rédigé!
+
+### Corps du travail
+
+Cette partie du TM est en général divisée en plusieurs chapitres en fonction de la recherche effectuée. Elle contient par exemple:
+
+- une argumentation de la problématique, appuyée par des sources externes;
+- la méthodologie employée dans le cadre du travail;
+- les résultats des différentes recherches effectuées;
+- un commentaire des résultats en rapport avec les questions soulevées au départ.
+
+### La problématique
+
+La problématique est la première section de votre TM. On peut parfois intégrer la problématique à l'introduction. La problématique est la première partie que vous allez rédiger. Une bonne problématique permet de comprendre le contexte de la recherche qui va suivre. Elle expose le *problème* qui sera traité dans le TM et permet de comprendre le cheminement qui a mené à la *question de recherche*.
+
+La question de recherche peut être divisée en plusieurs sous questions. Cet ensemble de question fixe le cadre de la recherche. C'est à ces questions là que vous allez chercher à répondre dans le cadre de votre recherche.
+
+### La méthodologie
+
+Cette section explique les différentes méthodes utilisées pour répondre aux questions de recherche. Ces méthodes peuvent être qualitatives ou quantitatives (voir @sec-methodes).
+
+### La conclusion
+
+Dernière section du TM, la conclusion résume les différents résultats. Elle présente un bilan critique par rapport aux questions de recherche soulevées.
+
+Comme pour l'introduction, la conclusion se rédige une fois que le TM est terminé.
+
+## La page de titre
+
+La page de titre mérite une attention toute particulière. La page de titre est le premier élément que le lecteur du TM découvre. Le titre du TM doit figurer de façon évidente et informer le lecteur sur le contenu attendu. Ce titre doit correspondre au titre officiel enregistré pour le TM auprès du secrétariat du Lycée. Un sous-titre peut compléter le titre si nécessaire. Finalement, une illustration peut servir de point d'accroche sur la page de titre.
+
+En plus des éléments évoqués, les points suivants doivent impérativement figurer sur la page de titre (cf. *Directives de présentation du travail de maturité*):
+
+- nom du lycée
+- année scolaire
+- titre du TM
+- nom, prénom et classe de l'élève
+- nom et prénom du mentor
+
+## La table des matières
+La table des matières constitue un élément essentiel du travail de maturité. Elle figure au début du travail et permet de se faire une idée globale de la structure. La table des matières reflète l'organisation logique des chapitres du travail. Elle permet également de retrouver facilement une section précise. L'utilisation des styles permet la création automatique d'une table des matières.
+
+## La bibliographie
+
+La bibliographie est la première annexe du TM. Elle répertorie toutes les sources employées lors de la rédaction du travail. La bibliographie peut être subdivisée en plusieurs sections logiques (par ex. Livres, Articles, Sites internet) chaque section répertoriant les différents éléments par auteur et dans l'ordre alphabétique.
+
+Une mise en page suspendue (retrait négatif de la première ligne) est souhaitable pour faciliter la recherche des auteurs (voir section *Références*).
+
+Les consignes concernant la mise en forme des références bibliographiques se trouvent dans les *Directives de présentation du travail de maturité*.
+
+## Les annexes
+
+En plus de la bibliographie, le TM peut être complété par différentes annexes. Par exemple:
+
+- un glossaire;
+- un résumé des faits historiques;
+- une grille d'entretien ainsi qu'une transcription de l'entretien; 
+- des illustrations qu'on n’a pas souhaité insérer dans le corps du texte, mais qui viennent compléter le travail;
+- etc.

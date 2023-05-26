@@ -1,0 +1,13 @@
+# Évaluation
+
+L'évaluation du travail de maturité se base sur une grille d'évaluation (voir pages suivantes). Les critères sont qualitatifs et n'ont pas de pondération précise.
+
+Dans la section B, seule la partie B.2 est évaluée pour les TM de recherche en géographie.
+
+{{< pagebreak >}}
+
+![](../documents/grille1.svg)
+
+{{< pagebreak >}}
+
+![](../documents/grille2.svg)

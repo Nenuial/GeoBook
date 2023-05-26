@@ -1,0 +1,10 @@
+title: LDDR Keynote
+author: Pascal Burkhard
+version: 1.0.0
+contributes:
+  format:
+    revealjs:
+      slide-number: c
+      highlight-style: github
+      theme: [style.scss]
+      logo: lddr-hex-nb.png

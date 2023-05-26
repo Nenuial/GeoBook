@@ -1,0 +1,42 @@
+project:
+  type: book
+
+book:
+  title: "Guide TM"
+  subtitle: "pour la Géographie"
+  author: "Pascal Burkhard"
+  date: "2023-05-01"
+  favicon: "resources/favicon.png"
+  navbar:
+    logo: "resources/logo-lddr.png"
+    background: "#2f466a"
+  chapters:
+    - index.qmd
+    - part: "Mise en page et structure"
+      chapters:
+        - chapters/01_forme.qmd
+        - chapters/02_structure.qmd
+    - part: "Méthodologie"
+      chapters: 
+        - chapters/03_documentation.qmd
+        - chapters/04_problematique.qmd
+        - chapters/05_methodes.qmd
+    - part: "Annexes"
+      chapters: 
+        - chapters/91_echeances.qmd
+        - chapters/92_soutenance.qmd
+        - chapters/93_evaluation.qmd
+        - chapters/99_references.qmd
+
+lang: fr-CH
+bibliography: references.bib
+csl: apa.csl
+
+format:
+  lddr-book-html:
+    cover-image: pictures/cover-web.png
+  lddr-book-pdf:
+    cover-background: pictures/cover.pdf
+
+
+

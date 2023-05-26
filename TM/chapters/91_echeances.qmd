@@ -1,0 +1,52 @@
+# Échéances
+
+```{r}
+#| label: setup
+#| echo: false
+
+withr::with_locale(
+  new = c("LC_TIME" = "fr_CH"),
+  code = {
+    deadline <- list(
+      first_review =        "mi-mai",
+      preliminary_version = format(lubridate::ymd("2023-06-26"), "%d %B %Y"),
+      complete_version =    format(lubridate::ymd("2023-08-31"), "%d %B %Y"),
+      second_review =       "mi-septembre",
+      final_version =       format(lubridate::ymd("2023-09-19"), "%d %B %Y"),
+      reddition =           format(lubridate::ymd("2023-10-18"), "%d %B %Y")
+    )
+  }
+)
+```
+
+Les échéances suivantes sont à respecter pour le bon déroulement du TM:
+
+```{r}
+#| echo: false
+#| eval: false
+#| results: asis
+
+tibble::tribble(
+  ~"Échéance",                   ~" ",
+  deadline$first_review,         "Premier bilan: bibliographie et problématique",
+  deadline$preliminary_version,  "Version préliminaire du TM",
+  deadline$complete_version,     "Version complète du TM (avec titre)",
+  deadline$second_review,        "Second bilan et titre définitif",
+  deadline$final_version,        "Version finale du TM",
+  deadline$reddition,            "Reddition version finale"
+) |> 
+  kableExtra::kbl(booktabs = T, linesep = "", escape = FALSE) |> 
+  unclass() |> cat()
+  # THIS IS A HACK ! REMOVE WHEN ISSUE
+  # https://github.com/quarto-dev/quarto-cli/issues/1710
+  # HAS BEEN CLOSED! (ALONG WIHT THE asis key above)
+```
+
+| Échéance                         |                                                   |
+|----------------------------------|--------------------------------------|
+| `r deadline$first_review`        | **Premier bilan**: bibliographie et problématique |
+| `r deadline$preliminary_version` | Version *préliminaire* du TM                      |
+| `r deadline$complete_version`    | Version *complète* du TM (avec titre)             |
+| `r deadline$second_review`       | **Second bilan** et titre définitif               |
+| `r deadline$final_version`       | Version finale du TM                              |
+| `r deadline$reddition`           | **Reddition version finale**                      |

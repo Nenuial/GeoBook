@@ -1,0 +1,1398 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  a4paper,
+]{book}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+  \setmainfont[Extension = .otf,Path = /Library/Fonts/,UprightFont =
+*-Light,ItalicFont = *-LightItalic,BoldFont = *-Regular,BoldItalicFont =
+*-Italic]{FiraSans}
+  \setsansfont[Extension = .otf,Path = /Library/Fonts/,UprightFont =
+*-Light,ItalicFont = *-LightItalic,BoldFont = *-Regular,BoldItalicFont =
+*-Italic]{FiraSans}
+  \setmathfont[Path = /Library/Fonts/,Extension = .otf]{FiraMath-Light}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Legrand Orange Book
+% Structural Definitions File
+% Version 2.0 (9/2/15)
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% This file has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\usepackage{import}
+
+\usepackage[top=3cm,bottom=3cm,left=3cm,right=3cm,headsep=10pt,a4paper]{geometry} % Page margins
+
+%\usepackage{amsmath,amsfonts,amssymb,amsthm} % For math equations, theorems, symbols, etc
+%\usepackage{mathabx}
+%\let\ulcorner\relax
+%\let\urcorner\relax
+%\let\llcorner\relax
+%\let\lrcorner\relax
+%\usepackage{wasysym}
+
+\usepackage{index}
+\usepackage{datatool}
+
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array,colortbl,multirow,multicol,adjustbox,booktabs}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+\usepackage{tabto}
+
+\usepackage{float}
+\floatstyle{plain}
+\newfloat{flbox}{thb}{flb}
+\floatname{flbox}{}
+
+\usepackage{iflang}
+
+\usepackage{pdflscape}
+
+\usepackage{newfloat}
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{tikz} % Required for drawing custom shapes
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows.meta,arrows}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{bending}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations}
+\usetikzlibrary{intersections}
+\usetikzlibrary{angles,quotes}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{positioning}
+\usetikzlibrary{fadings}
+
+
+\usepackage[space]{grffile} % For spaces in paths
+\usepackage{etoolbox} % For spaces in paths
+\makeatletter % For spaces in paths
+\patchcmd\Gread@eps{\@inputcheck#1 }{\@inputcheck"#1"\relax}{}{}
+\makeatother
+
+
+\usepackage{lipsum} % Inserts dummy text
+\usepackage{verbatim} % Commenting large sections
+
+\usepackage{enumitem} % Customize lists
+\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\usepackage{siunitx}
+\sisetup{inter-unit-product = \ensuremath{\cdot}}%
+\sisetup{exponent-product = \cdot}%
+
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{maincolor}{HTML}{0F2D61} % Define the color used for highlighting throughout the book
+\definecolor{ddrblue}{RGB}{36, 32, 75} % Define the DDR Color
+
+\usepackage{pgf}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+
+\usepackage{caption}
+
+
+%----------------------------------------------------------------------------------------
+%	GRAPHIC CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\pgfplotsset{%
+        compat=1.9,
+        blank onypyramid axis style/.style={%
+            width=0.38*\textwidth,
+            height=0.39*\textheight,
+            scale only axis,
+            grid=both,
+    		grid style={line width=.1pt, draw=gray!10},
+    		major grid style={line width=.2pt,draw=gray!50},
+            xmin=0,
+            ymin=-0.5,
+            ymax=100,
+            y dir=reverse,
+            enlarge x limits={value=1,upper},
+            enlarge y limits={value=0.006,upper},
+            xbar,
+            axis x line=left,
+            xtick align=outside,
+            bar width=1,
+            allow reversal of rel axis cs=false,
+        },
+        onypyramid axis style/.style={%
+            blank onypyramid axis style,
+            ytick=\empty,
+            axis line style={-},
+        },
+    }
+
+%----------------------------------------------------------------------------------------
+%	FONTS AND FORMATTING
+%----------------------------------------------------------------------------------------
+\usepackage[french=quotes]{csquotes}
+%\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+%\usepackage{ulem}
+%\normalem % Italic for emphasis
+%\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+%\usepackage{textcomp} % Allows for direct degree symbols
+\usepackage{newunicodechar}
+\newunicodechar{°}{\textdegree} % Define ° as \textdegree
+
+%\usepackage{indentfirst}
+
+%\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0.3cm}
+
+% dashed itemize
+\def\labelitemi{---}
+\def\labelitemii{--}
+
+% roman numerals
+\makeatletter
+\newcommand*{\romannum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+% Translation macro
+\newcommand{\trad}[2]{\IfLanguageName{english}{#1}{#2}}
+
+%----------------------------------------------------------------------------------------
+%	FLOATS AND FORMATTING BEHAVIOUR
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\floatpagefraction}{.8}%
+
+\widowpenalty 5000
+\clubpenalty 5000
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY AND INDEX
+%----------------------------------------------------------------------------------------
+
+\usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
+%\usepackage{makeidx} % Required to make an index
+\makeindex % Tells LaTeX to create the files required for indexing
+
+%----------------------------------------------------------------------------------------
+%	MAIN TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\usepackage{titletoc} % Required for manipulating the table of contents
+
+\contentsmargin{0cm} % Removes the default margin
+
+% Part text styling
+\titlecontents{part}[0cm]
+{\addvspace{20pt}\centering\large\bfseries}
+{}
+{}
+{}
+
+% Chapter text styling
+\titlecontents{chapter}[1.25cm] % Indentation
+{\addvspace{12pt}\large\sffamily\bfseries} % Spacing and font options for chapters
+{\color{maincolor!60}\contentslabel[\Large\thecontentslabel]{1.25cm}\color{maincolor}} % Chapter number
+{\color{maincolor}}
+{\color{maincolor!60}\normalsize\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+
+% Section text styling
+\titlecontents{section}[1.25cm] % Indentation
+{\addvspace{3pt}\sffamily\bfseries} % Spacing and font options for sections
+{\contentslabel[\thecontentslabel]{1.25cm}} % Section number
+{}
+{\color{black}\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+[]
+
+% Subsection text styling
+\titlecontents{subsection}[1.25cm] % Indentation
+{\addvspace{1pt}\sffamily\small} % Spacing and font options for subsections
+{\contentslabel[\thecontentslabel]{1.25cm}} % Subsection number
+{}
+{\ \titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+[]
+
+% List of figures
+\titlecontents{figure}[0em]
+{\addvspace{-5pt}\sffamily}
+{\thecontentslabel\hspace*{1em}}
+{}
+{\ \titlerule*[.5pc]{.}\;\thecontentspage}
+[]
+
+% List of tables
+\titlecontents{table}[0em]
+{\addvspace{-5pt}\sffamily}
+{\thecontentslabel\hspace*{1em}}
+{}
+{\ \titlerule*[.5pc]{.}\;\thecontentspage}
+[]
+
+%----------------------------------------------------------------------------------------
+%	MINI TABLE OF CONTENTS IN PART HEADS
+%----------------------------------------------------------------------------------------
+
+% Chapter text styling
+\titlecontents{lchapter}[0em] % Indenting
+{\addvspace{15pt}\large\sffamily\bfseries} % Spacing and font options for chapters
+{\color{maincolor}\contentslabel[\Large\thecontentslabel]{1.25cm}\color{maincolor}} % Chapter number
+{}
+{\color{maincolor}\normalsize\sffamily\bfseries\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+
+% Section text styling
+\titlecontents{lsection}[0em] % Indenting
+{\sffamily\small} % Spacing and font options for sections
+{\contentslabel[\thecontentslabel]{1.25cm}} % Section number
+{}
+{}
+
+% Subsection text styling
+\titlecontents{lsubsection}[.5em] % Indentation
+{\normalfont\footnotesize\sffamily} % Font settings
+{}
+{}
+{}
+
+%----------------------------------------------------------------------------------------
+%	PAGE HEADERS
+%----------------------------------------------------------------------------------------
+
+\usepackage{fancyhdr} % Required for header and footer configuration
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\chaptername\ \thechapter.\ #1}{}} % Chapter text font settings
+\renewcommand{\sectionmark}[1]{\markright{\sffamily\normalsize\thesection\hspace{5pt}#1}{}} % Section text font settings
+\fancyhf{} \fancyhead[LE,RO]{\sffamily\normalsize\thepage} % Font setting for the page number in the header
+\fancyhead[LO]{\rightmark} % Print the nearest section name on the left side of odd pages
+\fancyhead[RE]{\leftmark} % Print the current chapter name on the right side of even pages
+\renewcommand{\headrulewidth}{0.5pt} % Width of the rule under the header
+\addtolength{\headheight}{2.5pt} % Increase the spacing around the header slightly
+\renewcommand{\footrulewidth}{0pt} % Removes the rule in the footer
+\fancypagestyle{plain}{\fancyhead{}\renewcommand{\headrulewidth}{0pt}} % Style for when a plain pagestyle is specified
+
+% Removes the header from odd empty pages at the end of chapters
+\makeatletter
+\renewcommand{\cleardoublepage}{
+\clearpage\ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+\thispagestyle{empty}
+\newpage
+\fi}
+
+
+%----------------------------------------------------------------------------------------
+%	SECTION NUMBERING IN THE MARGIN
+%----------------------------------------------------------------------------------------
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\llap{\textcolor{maincolor}{\csname the#1\endcsname}\hspace{1em}}}
+\renewcommand{\section}{\@startsection{section}{1}{\z@}
+{-4ex \@plus -1ex \@minus -.4ex}
+{1ex \@plus.2ex }
+{\normalfont\large\sffamily\bfseries}}
+\renewcommand{\subsection}{\@startsection {subsection}{2}{\z@}
+{-3ex \@plus -0.1ex \@minus -.4ex}
+{0.5ex \@plus.2ex }
+{\normalfont\sffamily\bfseries}}
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{\z@}
+{-2ex \@plus -0.1ex \@minus -.2ex}
+{.2ex \@plus.2ex }
+{\normalfont\small\sffamily\bfseries}}
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}
+{-2ex \@plus-.2ex \@minus .2ex}
+{.1ex}
+{\normalfont\small\sffamily\bfseries}}
+
+%----------------------------------------------------------------------------------------
+%	PART HEADINGS
+%----------------------------------------------------------------------------------------
+
+% A switch to conditionally color background, implemented by  Christian Hupfer
+\newif\ifpartbackground
+\partbackgroundtrue
+
+% numbered part in the table of contents
+\newcommand{\@mypartnumtocformat}[2]{%
+\setlength\fboxsep{0pt}%
+\noindent\colorbox{maincolor!20}{\strut\parbox[c][.7cm]{\ecart}{\color{maincolor!70}\Large\sffamily\bfseries\centering#1}}\hskip\esp\colorbox{maincolor!40}{\strut\parbox[c][.7cm]{\linewidth-\ecart-\esp}{\Large\sffamily\centering#2}}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% unnumbered part in the table of contents
+\newcommand{\@myparttocformat}[1]{%
+\setlength\fboxsep{0pt}%
+\noindent\colorbox{maincolor!40}{\strut\parbox[c][.7cm]{\linewidth}{\Large\sffamily\centering#1}}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newlength\esp
+\setlength\esp{4pt}
+\newlength\ecart
+\setlength\ecart{1.2cm-\esp}
+\newcommand{\thepartimage}{}%
+\newcommand{\partimage}[1]{\renewcommand{\thepartimage}{#1}}%
+\def\@part[#1]#2{%
+\ifnum \c@secnumdepth >-2\relax%
+\refstepcounter{part}%
+\addcontentsline{toc}{part}{\texorpdfstring{\protect\@mypartnumtocformat{\thepart}{#1}}{\partname~\thepart\ ---\ #1}}
+\else%
+\addcontentsline{toc}{part}{\texorpdfstring{\protect\@myparttocformat{#1}}{#1}}%
+\fi%
+\startcontents%
+\markboth{}{}%
+{\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node at (current page.north west){\begin{tikzpicture}[remember picture,overlay]%
+\ifpartbackground\fill[maincolor!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);\fi
+\node[anchor=north] at (4cm,-3.25cm){\color{maincolor!40}\fontsize{220}{100}\addfontfeature{LetterSpace=-8}\bfseries\@Roman\c@part};
+\node[anchor=south east] at (\paperwidth-1cm,-\paperheight+1cm){\parbox[t][][t]{8.5cm}{
+\printcontents{l}{0}{\setcounter{tocdepth}{1}}%
+}};
+\node[anchor=north east] at (\paperwidth-1.5cm,-3.25cm){\parbox[t][][t]{15cm}{\strut\raggedleft\ifpartbackground\color{white}\else\color{maincolor}\fi\fontsize{30}{30}\sffamily\bfseries#2}};
+\end{tikzpicture}};
+\end{tikzpicture}}%
+\@endpart}
+\def\@spart#1{%
+\startcontents%
+\phantomsection
+{\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]%
+\node at (current page.north west){\begin{tikzpicture}[remember picture,overlay]%
+\ifusechapterimage\fill[maincolor!20](0cm,0cm) rectangle (\paperwidth,-\paperheight);
+\node[anchor=north east] at (\paperwidth-1.5cm,-3.25cm){\parbox[t][][t]{15cm}{\strut\raggedleft\color{white}\fontsize{30}{30}\sffamily\bfseries#1}};
+\end{tikzpicture}};
+\end{tikzpicture}}
+\addcontentsline{toc}{part}{\texorpdfstring{%
+\setlength\fboxsep{0pt}%
+\noindent\protect\colorbox{maincolor!40}{\strut\protect\parbox[c][.7cm]{\linewidth}{\Large\sffamily\protect\centering #1\quad\mbox{}}}}{#1}}%
+\@endpart}
+\def\@endpart{\vfil\newpage
+\if@twoside
+\if@openright
+\null
+\thispagestyle{empty}%
+\newpage
+\fi
+\fi
+\if@tempswa
+\twocolumn
+\fi}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER HEADINGS
+%----------------------------------------------------------------------------------------
+
+% A switch to conditionally include a picture, implemented by  Christian Hupfer
+\newif\ifusechapterimage
+\usechapterimagefalse
+\newcommand{\thechapterimage}{}%
+\newcommand{\chapterimage}[1]{\ifusechapterimage\renewcommand{\thechapterimage}{#1}\fi}%
+\def\@makechapterhead#1{%
+{\parindent \z@ \raggedright \normalfont
+\ifnum \c@secnumdepth >\m@ne
+\if@mainmatter
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
+\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=maincolor,fill=white,fill opacity=0.7,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{black}\thechapter. #1\strut};
+\end{tikzpicture}};
+\end{tikzpicture}
+\else
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
+\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=maincolor,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{black}#1\strut};
+\end{tikzpicture}};
+\end{tikzpicture}
+\fi\fi\par\vspace*{270\p@}}}
+
+%-------------------------------------------
+
+\def\@makeschapterhead#1{%
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
+\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=maincolor,fill=white,fill opacity=0.5,inner sep=15pt]{\strut\makebox[22cm]{}};
+\draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{black}#1\strut};
+\end{tikzpicture}};
+\end{tikzpicture}
+\par\vspace*{270\p@}}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	PGFPLOT ENGINEERING NOTATION
+%----------------------------------------------------------------------------------------
+
+\makeatletter
+
+\newif\ifpgfplots@scaled@x@ticks@engineering
+\pgfplots@scaled@x@ticks@engineeringfalse
+\newif\ifpgfplots@scaled@y@ticks@engineering
+\pgfplots@scaled@y@ticks@engineeringfalse
+\newif\ifpgfplots@scaled@z@ticks@engineering
+\pgfplots@scaled@z@ticks@engineeringfalse
+
+\pgfplotsset{
+    scaled x ticks/engineering/.code=
+        \pgfplots@scaled@x@ticks@engineeringtrue,
+    scaled y ticks/engineering/.code=
+        \pgfplots@scaled@y@ticks@engineeringtrue,
+    scaled z ticks/engineering/.code=
+        \pgfplots@scaled@y@ticks@engineeringtrue,
+%    scaled ticks=engineering  % Uncomment this line if you want "engineering" to be on by default
+}
+
+\def\pgfplots@init@scaled@tick@for#1{%
+    \global\def\pgfplots@glob@TMPa{0}%
+    \expandafter\pgfplotslistcheckempty\csname pgfplots@prepared@tick@positions@major@#1\endcsname
+    \ifpgfplotslistempty
+        % we have no tick labels. Omit the tick scale label as well!
+    \else
+    \begingroup
+    \ifcase\csname pgfplots@scaled@ticks@#1@choice\endcsname\relax
+    % CASE 0 : scaled #1 ticks=false: do nothing here.
+    \or
+        % CASE 1 : scaled #1 ticks=true:
+        %--------------------------------
+        % the \pgfplots@xmin@unscaled@as@float  is set just before the data
+        % scale transformation is initialised.
+        %
+        % The variables are empty if there is no datascale transformation.
+        \expandafter\let\expandafter\pgfplots@cur@min@unscaled\csname pgfplots@#1min@unscaled@as@float\endcsname
+        \expandafter\let\expandafter\pgfplots@cur@max@unscaled\csname pgfplots@#1max@unscaled@as@float\endcsname
+        %
+        \ifx\pgfplots@cur@min@unscaled\pgfutil@empty
+            \edef\pgfplots@loc@TMPa{\csname pgfplots@#1min\endcsname}%
+            \expandafter\pgfmathfloatparsenumber\expandafter{\pgfplots@loc@TMPa}%
+            \let\pgfplots@cur@min@unscaled=\pgfmathresult
+            \edef\pgfplots@loc@TMPa{\csname pgfplots@#1max\endcsname}%
+            \expandafter\pgfmathfloatparsenumber\expandafter{\pgfplots@loc@TMPa}%
+            \let\pgfplots@cur@max@unscaled=\pgfmathresult
+        \fi
+        %
+        \expandafter\pgfmathfloat@decompose@E\pgfplots@cur@min@unscaled\relax\pgfmathfloat@a@E
+        \expandafter\pgfmathfloat@decompose@E\pgfplots@cur@max@unscaled\relax\pgfmathfloat@b@E
+        \pgfplots@init@scaled@tick@normalize@exponents
+        \ifnum\pgfmathfloat@b@E<\pgfmathfloat@a@E
+            \pgfmathfloat@b@E=\pgfmathfloat@a@E
+        \fi
+        \xdef\pgfplots@glob@TMPa{\pgfplots@scale@ticks@above@exponent}%
+        \ifnum\pgfplots@glob@TMPa<\pgfmathfloat@b@E
+            % ok, scale it:
+            \expandafter\ifx % Check whether we're using engineering notation (restricting exponents to multiples of three)
+                \csname ifpgfplots@scaled@#1@ticks@engineering\expandafter\endcsname
+                \csname iftrue\endcsname
+                    \divide\pgfmathfloat@b@E by 3
+                    \multiply\pgfmathfloat@b@E by 3
+            \fi
+            \multiply\pgfmathfloat@b@E by-1
+            \xdef\pgfplots@glob@TMPa{\the\pgfmathfloat@b@E}%
+        \else
+            \xdef\pgfplots@glob@TMPa{\pgfplots@scale@ticks@below@exponent}%
+            \ifnum\pgfplots@glob@TMPa>\pgfmathfloat@b@E
+                % ok, scale it:
+                \expandafter\ifx % Check whether we're using engineering notation (restricting exponents to multiples of three)
+                    \csname ifpgfplots@scaled@#1@ticks@engineering\expandafter\endcsname
+                    \csname iftrue\endcsname
+                        \advance\pgfmathfloat@b@E by -2
+                        \divide\pgfmathfloat@b@E by 3
+                        \multiply\pgfmathfloat@b@E by 3
+                \fi
+                \multiply\pgfmathfloat@b@E by-1
+                \xdef\pgfplots@glob@TMPa{\the\pgfmathfloat@b@E}%
+            \else
+                % no scaling necessary:
+                \xdef\pgfplots@glob@TMPa{0}%
+            \fi
+        \fi
+    \or
+        % CASE 2 : scaled #1 ticks=base 10:
+        %--------------------------------
+        \c@pgf@counta=\csname pgfplots@scaled@ticks@#1@arg\endcsname\relax
+        %\multiply\c@pgf@counta by-1
+        \xdef\pgfplots@glob@TMPa{\the\c@pgf@counta}%
+    \or
+        % CASE 3 : scaled #1 ticks=real:
+        %--------------------------------
+        \pgfmathfloatparsenumber{\csname pgfplots@scaled@ticks@#1@arg\endcsname}%
+        \global\let\pgfplots@glob@TMPa=\pgfmathresult
+    \or
+        % CASE 4 : scaled #1 ticks=manual:
+        \expandafter\global\expandafter\let\expandafter\pgfplots@glob@TMPa\csname pgfplots@scaled@ticks@#1@arg\endcsname
+    \fi
+    \endgroup
+    \fi
+    \expandafter\let\csname pgfplots@tick@scale@#1\endcsname=\pgfplots@glob@TMPa%
+}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS IN THE DOCUMENTS
+%----------------------------------------------------------------------------------------
+
+\usepackage{zref-xr,zref-user}
+\usepackage{hyperref}
+\hypersetup{hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor= maincolor,bookmarks=true,bookmarksopen=false,pdftitle={Géographie DF},pdfauthor={Pascal Burkhard}}
+\usepackage{bookmark}
+\bookmarksetup{
+open,
+numbered,
+addtohook={%
+\ifnum\bookmarkget{level}=0 % chapter
+\bookmarksetup{bold}%
+\fi
+\ifnum\bookmarkget{level}=-1 % part
+\bookmarksetup{color=maincolor,bold}%
+\fi
+}
+}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\usepackage{caption}
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table des matières}
+\else
+  \newcommand\contentsname{Table des matières}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Liste des Figures}
+\else
+  \newcommand\listfigurename{Liste des Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Liste des Tables}
+\else
+  \newcommand\listtablename{Liste des Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{Liste des Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{french}
+\ifPDFTeX
+\else
+\babelfont[french]{rm}[Extension = .otf,Path =
+/Library/Fonts/,UprightFont = *-Light,ItalicFont =
+*-LightItalic,BoldFont = *-Regular,BoldItalicFont = *-Italic]{FiraSans}
+\fi
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Guide TM},
+  pdfauthor={Pascal Burkhard},
+  pdflang={fr-CH},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\begin{document}
+\begingroup
+\pagenumbering{alph}
+\setcounter{page}{1}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+
+\node[anchor=north west,inner sep=1.5 cm] at (current page.north west) {\includegraphics[width=5cm]{\_extensions/nenuial/lddr-book/logo\_LDDR.pdf}};
+
+\node[anchor=south east, inner sep=0pt] at (current page.south east) {\includegraphics[height=20cm, width=50cm, keepaspectratio]{pictures/cover.pdf}};
+
+\fill[fill=ddrblue] ([shift={(0,-4)}] current page.west) -- ([shift={(0,6)}] current page.west) -- ([shift={(0,0)}] current page.north east) node [midway] (midpoint) {} -- ([shift={(0,-10)}] current page.north east);
+
+\node[white, rotate = 22.85] at ([shift={(0,-5)}] midpoint) {\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering GUIDE
+TM\\[20pt] % Book title
+	{\huge pour la Géographie}\\[20pt]}};
+
+\end{tikzpicture}
+\vfill
+\endgroup\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, interior hidden, borderline west={3pt}{0pt}{shadecolor}, sharp corners, frame hidden, breakable, boxrule=0pt]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Table des matières}
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\mainmatter
+\bookmarksetup{startatroot}
+
+\hypertarget{pruxe9face}{%
+\chapter*{Préface}\label{pruxe9face}}
+\addcontentsline{toc}{chapter}{Préface}
+
+\markboth{Préface}{Préface}
+
+\phantomsection
+
+Le but de ce guide est de proposer une référence pour la réalisation
+d'un travail de maturité en géographie. Les indications données dans ce
+guide sont des recommandations, elles n'ont pas de caractère
+obligatoire. Le document \emph{Guide et directives de présentation du
+travail de maturité} (voir LDDR, 2023) donne les lignes directrices
+communes à tout travail de maturité.
+
+\part{Mise en page et structure}
+
+\hypertarget{forme-du-travail}{%
+\chapter{Forme du travail}\label{forme-du-travail}}
+
+\hypertarget{la-mise-en-page}{%
+\section{La mise en page}\label{la-mise-en-page}}
+
+Votre travail de maturité est le fruit de nombreuses heures de
+recherche, compilation, rédaction, et bien d'autres tâches encore. Le
+résultat de ce travail conséquent mérite d'être mis en valeur. Ce n'est
+pas parce que le contenu est excellent que la forme peut être négligée.
+Le but de ce chapitre est de rappeler les règles d'usages pour la
+présentation d'un TM.
+
+\hypertarget{le-format}{%
+\section{Le format}\label{le-format}}
+
+Le TM est présenté au format \textsc{A4}. Il est habituel de prévoir des
+marges de 2 à 3cm. Comme indiqué dans les \emph{Directives de
+présentation du travail de maturité} : ``une marge de reliure doit être
+prévue à gauche''. Cela signifie que la marge gauche du travail est
+environ 0.5 cm plus large que celle de droite pour tenir compte de la
+reliure du travail.
+
+\hypertarget{la-numuxe9rotation-des-pages}{%
+\subsection{La numérotation des
+pages}\label{la-numuxe9rotation-des-pages}}
+
+Les pages du TM doivent être numérotées à l'exception de la page de
+titre et de la table des matières. Les numéros de pages sont placés en
+bas à droite ou au centre de la page.
+
+\hypertarget{les-styles}{%
+\subsection{Les styles}\label{les-styles}}
+
+L'utilisation des styles dans \textsc{Microsoft Word} pour la rédaction
+d'un document de l'envergure du TM est essentielle. Les styles
+permettent une mise en page uniforme tout au long du document. Ils
+permettent également la création d'une table des matières automatique.
+
+\hypertarget{les-titres-et-sous-titres}{%
+\section{Les titres et sous-titres}\label{les-titres-et-sous-titres}}
+
+Les titres et sous-titres reflètent l'organisation logique du TM. Le
+niveau du titre (titre, sous-titre, sous-sous-titre, etc.) est reflété
+dans sa présentation (taille de la police de caractère, gras, italique,
+etc.).
+
+Tous les titres de premier niveau (exemples: Introduction,
+Problématique, Conclusion, Bibliographie, etc.) commencent sur une
+nouvelle page. Les styles proposent une option qui automatise ce
+comportement.
+
+Un espace suffisant (environ 12pt) est prévu avant et après les titres.
+L'espace avant est toujours supérieur à l'espace après. En fonction du
+niveau de titre, cet espace peut être plus important.
+
+\hypertarget{les-paragraphes}{%
+\section{Les paragraphes}\label{les-paragraphes}}
+
+Les paragraphes permettent de refléter l'organisation logique de la
+pensée. Chaque paragraphe présente une idée, un concept. La division du
+texte en paragraphes permet de faciliter la lecture.
+
+Les paragraphes sont justifiés. On sépare les paragraphes par un espace
+d'environ 6pt. La première ligne d'un paragraphe peut-être indentée,
+mais il ne s'agit pas d'une obligation.
+
+\hypertarget{les-figures-et-tableaux}{%
+\section{Les figures et tableaux}\label{les-figures-et-tableaux}}
+
+Les figures et les tableaux permettent d'illustrer (au sens large du
+terme) les propos du texte. Ces ``illustrations'' sont là pour appuyer
+un argument. Si le texte ne fait pas référence à une illustration, il
+faut se poser la question de l'utilité de celle-ci.
+
+Avec les moyens de recherches modernes, il est aisé de trouver une
+illustration pour presque n'importe quel mot-clé. Portez une attention
+particulièrement aux images réalisées par des tiers. Posez-vous les
+questions suivantes:
+
+\begin{itemize}
+\tightlist
+\item
+  Suis-je incapable de faire cette illustration moi-même ?
+\item
+  Cette illustration est-elle d'une qualité (résolution) suffisante pour
+  l'impression ?
+\item
+  Suis-je en mesure d'expliquer le contenu de l'illustration
+\end{itemize}
+
+Dans le TM, chaque figure ou tableau est numéroté et accompagné d'une
+brève légende avec une éventuelle référence à la source. Portez une
+attention particulière à la mise en forme de vos tableaux: celle-ci doit
+être uniforme et cohérente.
+
+\hypertarget{les-ruxe8gles-typographiques}{%
+\section{Les règles typographiques}\label{les-ruxe8gles-typographiques}}
+
+\hypertarget{la-police-de-caractuxe8res}{%
+\subsection{La police de caractères}\label{la-police-de-caractuxe8res}}
+
+Le choix de la police de caractères du TM est libre. Des options
+\emph{standards} sont \textsc{Arial}~12pt et \textsc{Times New
+Roman}~14pt. Choisissez une police de caractères qui vous plaise, mais
+évitez les aspects trop exotiques!
+
+\hypertarget{les-espacements}{%
+\subsection{Les espacements}\label{les-espacements}}
+
+Il existe des règles d'usage dans chaque langue concernant l'espacement.
+\textsc{Microsoft Word} insert, en principe, les bonnes espaces en
+fonction du signe de ponctuation utilisé. La table
+Table~\ref{tbl-punctuation} résume les espaces à utiliser pour les
+principaux signes de ponctuation.
+
+Il existe trois types d'espaces différentes : l'espace sécable, l'espace
+insécable et l'espace fine. L'espace sécable est une espace qui peut
+être coupée en fin de ligne. L'espace insécable est une espace qui ne
+peut être divisée en fin de ligne. Sous \emph{Windows} l'espace
+insécable s'obtient par la combinaison de touches \emph{Alt~+ 255} et
+sous \textsc{Mac OS X} la combinaison est \emph{Alt (option)~+ barre
+d'espacement}. L'espace fine est une espace insécable plus étroite.
+\textsc{Microsoft Word} ne connait pas cette espace et on la remplace
+généralement par une espace insécable.
+
+\hypertarget{tbl-punctuation}{}
+\begin{table}
+\caption{\label{tbl-punctuation}Règles pour les espaces }\tabularnewline
+
+\centering
+\begin{tabular}[t]{llll}
+\toprule
+Signe de ponctuation &   & espace avant & espace après\\
+\midrule
+Point & . & aucun & sécable\\
+Point d'exclamation & ! & fine & sécable\\
+Point d'interrogation & ? & fine & sécable\\
+Point de suspension & … & aucune & sécable\\
+\midrule
+Virgule & , & aucune & sécable\\
+Point virgule & ; & insécable & sécable\\
+Deux points & : & fine & sécable\\
+\midrule
+Trait d'union & − & aucune & aucune\\
+Tiret & -- & sécable & sécable\\
+\midrule
+Guillemet ouvrant & « & sécable & fine\\
+Guillemet fermant & » & fine & sécable\\
+Guillemet anglais ouvrant & “ & sécable & aucune\\
+Guillemet anglais fermant & ” & aucune & sécable\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{les-notes-de-bas-de-page}{%
+\subsection{Les notes de bas de page}\label{les-notes-de-bas-de-page}}
+
+Les notes de bas de page permettent de préciser un terme ou une idée.
+Dans le cadre du TM, on utilise également les notes de bas de page pour
+indiquer les références des sources utilisées.
+
+Les notes de bas de page se placent avant tous signes de ponctuation.
+Donc à la fin d'une phrase la note se place avant le point final!
+
+\hypertarget{la-touche-personnelle}{%
+\section{La touche personnelle}\label{la-touche-personnelle}}
+
+Les \emph{Directives de présentation du travail de maturité} offrent une
+large latitude en ce qui concerne la mise en forme du travail de
+maturité. Chacun doit se sentir libre d'apporter sa touche personnelle,
+que ce soit avec un choix de police de caractère sensiblement différent
+ou une mise en forme des titres et sous-titres particulière par exemple.
+
+\hypertarget{structure-du-travail}{%
+\chapter{Structure du travail}\label{structure-du-travail}}
+
+\hypertarget{les-chapitres}{%
+\section{Les chapitres}\label{les-chapitres}}
+
+Le travail de maturité est organisé par chapitre. Cette structure permet
+d'organiser la réflexion qui anime le TM. Chaque chapitre peut être
+subdivisé en plusieurs sous-chapitres lorsque cela s'avère nécessaire.
+De même les sous-chapitres peuvent également être subdivisés. Une
+structure avec plus de trois niveaux n'est cependant pas recommandée
+pour un travail de l'envergure du TM.
+
+Le TM contiendra, en plus des annexes, au minimum les chapitres
+suivants:
+
+\hypertarget{lintroduction}{%
+\subsection{L'introduction}\label{lintroduction}}
+
+L'introduction expose le contexte général du TM. L'introduction permet
+de défendre le choix du sujet et d'expliquer ses motivations
+personnelles. On y trouve également un bref résumé des points essentiels
+qui seront traités dans le TM (sous forme de table des matières
+commentée par exemple).
+
+La majeure partie de l'introduction se rédige une fois que le contenu du
+TM est bien avancé. Il est impossible de résumer les points essentiels
+du TM avant que celui-ci ne soit rédigé!
+
+\hypertarget{corps-du-travail}{%
+\subsection{Corps du travail}\label{corps-du-travail}}
+
+Cette partie du TM est en général divisée en plusieurs chapitres en
+fonction de la recherche effectuée. Elle contient par exemple:
+
+\begin{itemize}
+\tightlist
+\item
+  une argumentation de la problématique, appuyée par des sources
+  externes;
+\item
+  la méthodologie employée dans le cadre du travail;
+\item
+  les résultats des différentes recherches effectuées;
+\item
+  un commentaire des résultats en rapport avec les questions soulevées
+  au départ.
+\end{itemize}
+
+\hypertarget{la-probluxe9matique}{%
+\subsection{La problématique}\label{la-probluxe9matique}}
+
+La problématique est la première section de votre TM. On peut parfois
+intégrer la problématique à l'introduction. La problématique est la
+première partie que vous allez rédiger. Une bonne problématique permet
+de comprendre le contexte de la recherche qui va suivre. Elle expose le
+\emph{problème} qui sera traité dans le TM et permet de comprendre le
+cheminement qui a mené à la \emph{question de recherche}.
+
+La question de recherche peut être divisée en plusieurs sous questions.
+Cet ensemble de question fixe le cadre de la recherche. C'est à ces
+questions là que vous allez chercher à répondre dans le cadre de votre
+recherche.
+
+\hypertarget{la-muxe9thodologie}{%
+\subsection{La méthodologie}\label{la-muxe9thodologie}}
+
+Cette section explique les différentes méthodes utilisées pour répondre
+aux questions de recherche. Ces méthodes peuvent être qualitatives ou
+quantitatives (voir Chapitre~\ref{sec-methodes}).
+
+\hypertarget{la-conclusion}{%
+\subsection{La conclusion}\label{la-conclusion}}
+
+Dernière section du TM, la conclusion résume les différents résultats.
+Elle présente un bilan critique par rapport aux questions de recherche
+soulevées.
+
+Comme pour l'introduction, la conclusion se rédige une fois que le TM
+est terminé.
+
+\hypertarget{la-page-de-titre}{%
+\section{La page de titre}\label{la-page-de-titre}}
+
+La page de titre mérite une attention toute particulière. La page de
+titre est le premier élément que le lecteur du TM découvre. Le titre du
+TM doit figurer de façon évidente et informer le lecteur sur le contenu
+attendu. Ce titre doit correspondre au titre officiel enregistré pour le
+TM auprès du secrétariat du Lycée. Un sous-titre peut compléter le titre
+si nécessaire. Finalement, une illustration peut servir de point
+d'accroche sur la page de titre.
+
+En plus des éléments évoqués, les points suivants doivent impérativement
+figurer sur la page de titre (cf.~\emph{Directives de présentation du
+travail de maturité}):
+
+\begin{itemize}
+\tightlist
+\item
+  nom du lycée
+\item
+  année scolaire
+\item
+  titre du TM
+\item
+  nom, prénom et classe de l'élève
+\item
+  nom et prénom du mentor
+\end{itemize}
+
+\hypertarget{la-table-des-matiuxe8res}{%
+\section{La table des matières}\label{la-table-des-matiuxe8res}}
+
+La table des matières constitue un élément essentiel du travail de
+maturité. Elle figure au début du travail et permet de se faire une idée
+globale de la structure. La table des matières reflète l'organisation
+logique des chapitres du travail. Elle permet également de retrouver
+facilement une section précise. L'utilisation des styles permet la
+création automatique d'une table des matières.
+
+\hypertarget{la-bibliographie}{%
+\section{La bibliographie}\label{la-bibliographie}}
+
+La bibliographie est la première annexe du TM. Elle répertorie toutes
+les sources employées lors de la rédaction du travail. La bibliographie
+peut être subdivisée en plusieurs sections logiques (par ex. Livres,
+Articles, Sites internet) chaque section répertoriant les différents
+éléments par auteur et dans l'ordre alphabétique.
+
+Une mise en page suspendue (retrait négatif de la première ligne) est
+souhaitable pour faciliter la recherche des auteurs (voir section
+\emph{Références}).
+
+Les consignes concernant la mise en forme des références
+bibliographiques se trouvent dans les \emph{Directives de présentation
+du travail de maturité}.
+
+\hypertarget{les-annexes}{%
+\section{Les annexes}\label{les-annexes}}
+
+En plus de la bibliographie, le TM peut être complété par différentes
+annexes. Par exemple:
+
+\begin{itemize}
+\tightlist
+\item
+  un glossaire;
+\item
+  un résumé des faits historiques;
+\item
+  une grille d'entretien ainsi qu'une transcription de l'entretien;
+\item
+  des illustrations qu'on n'a pas souhaité insérer dans le corps du
+  texte, mais qui viennent compléter le travail;
+\item
+  etc.
+\end{itemize}
+
+\part{Méthodologie}
+
+\hypertarget{documentation}{%
+\chapter{Documentation}\label{documentation}}
+
+\hypertarget{les-sources}{%
+\section{Les sources}\label{les-sources}}
+
+La rédaction d'un travail de maturité en géographie commence
+inévitablement par une documentation sur le sujet retenu. Une
+documentation, aussi large que possible sans pour autant s'éloigner du
+sujet-cadre, permet d'approfondir les connaissances. La recherche
+bibliographique peut vite s'avérer chronophage.
+
+Concentrez-vous sur quelques ouvrages clés au début avant d'approfondir
+vos recherches. Appliquez le principe en cascade: commencez par des
+ouvrages plus généraux avant de chercher des sources plus spécifiques.
+
+Chaque ouvrage sérieux est en général accompagné d'une bibliographie.
+L'exploration de différentes bibliographies dans des ouvrages généraux
+permettra de trouver des sources plus spécifiques. Une recherche sur
+internet avec des mots-clés bien choisis permettra souvent de dénicher
+des références pertinentes.
+
+\hypertarget{ouxf9-trouver-des-ouvrages}{%
+\subsection{Où trouver des ouvrages?}\label{ouxf9-trouver-des-ouvrages}}
+
+Beaucoup d'informations se trouvent aujourd'hui sur internet. Il faut
+cependant être particulièrement prudent avec les informations trouvées
+sur des sites dont la fiabilité n'est pas absolument certaine!
+
+La Wikipedia est une mine d'informations d'ordre général. \textbf{Un
+article de la Wikipédia ne constitue cependant pas une source!} Les bons
+articles contiennent des références qui méritent souvent d'être
+consultées. La Wikipédia peut donc s'avérer un bon point de départ dans
+la recherche de sources pour le TM.
+
+Même si de nombreuses informations sont aujourd'hui accessibles en
+ligne, une recherche d'ouvrages \emph{papier} est incontournable.
+Quelques bonnes pistes pour débuter vos recherches:
+
+\begin{itemize}
+\tightlist
+\item
+  Catalogue de la bibliothèque du LDDR:\\
+  \url{http://netbiblio2.rpn.ch/neuc-lddr}
+\item
+  Catalogue des bibliothèques publiques romandes:\\
+  \url{https://bib.rero.ch}
+\item
+  Catalogue des bibliothèques universitaires suisses:\\
+  \url{https://swisscovery.slsp.ch}
+\item
+  Google Books:\\
+  \url{https://books.google.ch}
+\item
+  Google Scholar:\\
+  \url{https://scholar.google.ch}
+\end{itemize}
+
+\hypertarget{quest-ce-quune-bonne-source}{%
+\subsection{Qu'est-ce qu'une bonne
+source?}\label{quest-ce-quune-bonne-source}}
+
+Les anglais disent ``Don't judge a book by its cover''. Cet adage est
+particulièrement vrai lorsqu'on recherche de \emph{bonnes} références.
+Ce n'est pas la couverture du livre qui en dira beaucoup sur son
+contenu. Commencer par consulter la table des matières. Elle vous en
+dira beaucoup plus sur les points abordés dans l'ouvrage.
+
+Il n'est pas aisé de dire du premier coup d'oeil ce qui constitue une
+\emph{bonne} ou une \emph{mauvaise} source. Une référence qui est
+reprise par de nombreux autres ouvrages peut cependant être considérée
+comme relativement fiable. Cela dit, gardez toujours un esprit critique,
+même avec les meilleurs ouvrages. Lorsqu'une affirmation est contestée,
+demandez-vous pourquoi. Creusez lorsque les points de vue ne sont pas
+unanimes.
+
+\hypertarget{la-grille-de-lecture}{%
+\section{La grille de lecture}\label{la-grille-de-lecture}}
+
+Au cours de vos lectures, organisez-vous pour prendre des notes. Il vous
+sera impossible de vous souvenir de toutes vos lectures lorsque vous
+rédigerez votre TM. Essayez de synthétiser ce que vous lisez en résumant
+les différentes sections qui vous ont paru pertinentes.
+
+Il n'existe pas de système universel qui convienne à tout le monde.
+Chacun doit trouver une organisation qui lui parait efficace. La prise
+de note selon le système de Cornell (voir figure
+Figure~\ref{fig-cornell}) est cependant réputée pour son efficacité.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\textwidth,height=\textheight]{chapters/../pictures/cornell.png}
+
+}
+
+\caption{\label{fig-cornell}rise de notes selon le système de Cornell}
+
+\end{figure}
+
+Une colonne sur la gauche permet de retenir des mot-clés concernant les
+notes pour retrouver les informations aisément. Une section au bas de la
+page permet de résumer les informations.
+
+\hypertarget{probluxe9matique}{%
+\chapter{Problématique}\label{probluxe9matique}}
+
+La première étape de rédaction du TM consiste à formuler une
+problématique. La problématique doit rentrer dans le sujet-cadre retenu.
+Une bonne problématique expose de façon claire et pertinente le problème
+que vous allez chercher à résoudre dans votre TM.
+
+La problématique peut tenir sur une phrase ou un paragraphe. À partir de
+votre problématique, vous pourrez ensuite formuler une question de
+recherche. La question de recherche découle de la problématique. La
+question centrale peut ensuite être décomposée en plusieurs
+sous-questions. Le TM apportera des éléments de réponse à chacune des
+sous-questions formulées dans cette partie.
+
+Dans la conclusion du TM, on pourra revenir sur la question de recherche
+et faire un bilan des éléments de réponse apportés.
+
+\hypertarget{sec-methodes}{%
+\chapter{Méthodes}\label{sec-methodes}}
+
+\hypertarget{les-muxe9thodes-de-recherche}{%
+\section{Les méthodes de recherche}\label{les-muxe9thodes-de-recherche}}
+
+Un bon travail de maturité ira au-delà d'une simple recherche
+documentaire. En effet, la synthèse de travaux existants est une partie
+importante d'un travail académique, mais elle ne constitue qu'une
+première étape pour un travail abouti.
+
+Dans le cadre d'une recherche en géographie, des méthodes qualitatives
+comme quantitatives s'offrent à nous. En fonction de la question de
+recherche, l'un ou l'autre domaine sera privilégié. Une combinaison de
+plusieurs méthodes est tout à fait envisageable (voir aussi Béguin \&
+Pumain (2017)).
+
+\hypertarget{les-muxe9thodes-qualitatives}{%
+\section{Les méthodes qualitatives}\label{les-muxe9thodes-qualitatives}}
+
+Les méthodes qualitatives regroupent une famille d'outil permettant
+d'obtenir des données qualitatives pour des phénomènes qui serait
+autrement difficilement mesurable. Ces outils permettent de récolter des
+informations permettant d'amener des éléments de réponse à la question
+de recherche.
+
+Parmi les méthodes qualitatives possibles dans le cadre d'un travail de
+maturité on retiendra principalement l'observation et l'entretien.
+
+\hypertarget{lobservation}{%
+\subsection{L'observation}\label{lobservation}}
+
+Suivant l'objet d'étude défini dans la problématique, l'observation
+s'impose comme la méthode principale permettant de décrire un phénomène.
+L'observation est une méthode qui se prête particulièrement bien aux
+sujets en rapport avec un processus spatial.
+
+\hypertarget{lentretien}{%
+\subsection{L'entretien}\label{lentretien}}
+
+L'entretien est un des outils principaux utilisés comme méthode
+qualitative. Quelle que soit la question de recherche, un entretien
+pourra par exemple permettre de clarifier un aspect de la problématique.
+
+Les entretiens peuvent être plus ou moins directifs: selon les
+informations recherchées, les questions posées peuvent être plus ou
+moins ouvertes. Quel que soit le type d'entretien prévu, une grille
+d'entretien est un bon moyen de maintenir un fil rouge cohérent lors de
+l'entretien.
+
+\hypertarget{les-muxe9thodes-quantitatives}{%
+\section{Les méthodes
+quantitatives}\label{les-muxe9thodes-quantitatives}}
+
+Lorsque les phénomènes observés possèdent des éléments mesurables, les
+méthodes quantitatives sont privilégiées. Pour de nombreux domaines, on
+peut avoir recours à des statistiques.
+
+Si le sujet s'y prête, un questionnaire est un moyen simple d'obtenir
+soi-même des données quantitatives en rapport avec l'objet de recherche.
+
+\part{Annexes}
+
+\hypertarget{uxe9chuxe9ances}{%
+\chapter{Échéances}\label{uxe9chuxe9ances}}
+
+Les échéances suivantes sont à respecter pour le bon déroulement du TM:
+
+\begin{longtable*}{ll}
+\toprule
+Échéance &   \\ 
+\midrule
+mi mai & \textbf{Premier bilan}: bibliographie et problématique \\ 
+27 juin 2022 & Version préliminaire du TM \\ 
+31 août 2022 & Version \emph{complète} du TM (avec titre) \\ 
+mi septembre & \textbf{Second bilan et titre définitif} \\ 
+20 septembre 2022 & \textbf{Version finale du TM} \\ 
+19 octobre 2022 & \textbf{Reddition version finale} \\ 
+\bottomrule
+\end{longtable*}
+
+\hypertarget{soutenance}{%
+\chapter{Soutenance}\label{soutenance}}
+
+La soutenance dure 15 minutes. Elle se divise en général en deux
+parties. Dans la première partie, l'étudiant présente son travail et
+apporte une réflexion critique par rapport aux méthodes utilisées et aux
+résultats présentés. Quelles ont été les difficultés ? Procèderait-on de
+la même façon s'il fallait recommencer ? Quelles sont les limites du
+travail ? etc\ldots{} Dans la seconde partie, le mentor et l'expert
+poseront quelques questions par rapport au travail réalisé.
+
+Il n'est pas inutile de relire son TM quelques jours avant la
+soutenance. Gardez un esprit critique lors de cette relecture.
+Demandez-vous quelles sont les forces et les faiblesses du travail.
+
+\hypertarget{uxe9valuation}{%
+\chapter{Évaluation}\label{uxe9valuation}}
+
+L'évaluation du travail de maturité se base sur une grille d'évaluation
+(voir pages suivantes). Les critères sont qualitatifs et n'ont pas de
+pondération précise.
+
+Dans la section B, seule la partie B.2 est évaluée pour les TM de
+recherche en géographie.
+
+\newpage{}
+
+\includegraphics{index_files/mediabag/chapters/../documents/grille1.pdf}
+
+\newpage{}
+
+\includegraphics{index_files/mediabag/chapters/../documents/grille2.pdf}
+
+\hypertarget{ruxe9fuxe9rences}{%
+\chapter*{Références}\label{ruxe9fuxe9rences}}
+\addcontentsline{toc}{chapter}{Références}
+
+\markboth{Références}{Références}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-buxe9guin2017}{}}%
+Béguin, M., \& Pumain, D. (2017). \emph{La représentation des données
+géographiques} (4e édition). Armand Colin.
+
+\leavevmode\vadjust pre{\hypertarget{ref-lddr2023}{}}%
+LDDR. (2023). \emph{Guide et directives de présentation du travail de
+maturité} (Session 2023). \url{https://geoviews.link/guideTM2023}
+
+\end{CSLReferences}
+
+
+\backmatter
+
+\end{document}

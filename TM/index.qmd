@@ -1,0 +1,11 @@
+# Préface {.unnumbered}
+
+\phantomsection
+
+Le but de ce guide est de proposer une référence pour la réalisation d'un travail de maturité en géographie. Les indications données dans ce guide sont des recommandations, elles n'ont pas de caractère obligatoire. Le document *Guide et directives de présentation du travail de maturité* [voir @lddr2023] donne les lignes directrices communes à tout travail de maturité.
+
+::: {.content-hidden unless-format="html"}
+
+Vous pouvez également télécharger ce [guide au format pdf](Guide-TM.pdf).
+
+:::

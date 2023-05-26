@@ -1,0 +1,44 @@
+# Documentation
+
+## Les sources
+
+La rédaction d'un travail de maturité en géographie commence inévitablement par une documentation sur le sujet retenu. Une documentation, aussi large que possible sans pour autant s'éloigner du sujet-cadre, permet d'approfondir les connaissances. La recherche bibliographique peut vite s'avérer chronophage.
+
+Concentrez-vous sur quelques ouvrages clés au début avant d'approfondir vos recherches. Appliquez le principe en cascade: commencez par des ouvrages plus généraux avant de chercher des sources plus spécifiques.
+
+Chaque ouvrage sérieux est en général accompagné d'une bibliographie. L'exploration de différentes bibliographies dans des ouvrages généraux permettra de trouver des sources plus spécifiques. Une recherche sur internet avec des mots-clés bien choisis permettra souvent de dénicher des références pertinentes.
+
+### Où trouver des ouvrages?
+
+Beaucoup d'informations se trouvent aujourd'hui sur internet. Il faut cependant être particulièrement prudent avec les informations trouvées sur des sites dont la fiabilité n'est pas absolument certaine!
+
+La Wikipedia est une mine d'informations d'ordre général. **Un article de la Wikipédia ne constitue cependant pas une source!** Les bons articles contiennent des références qui méritent souvent d'être consultées. La Wikipédia peut donc s'avérer un bon point de départ dans la recherche de sources pour le TM.
+
+Même si de nombreuses informations sont aujourd'hui accessibles en ligne, une recherche d'ouvrages *papier* est incontournable. Quelques bonnes pistes pour débuter vos recherches:
+
+- Catalogue de la bibliothèque du LDDR:  
+    <http://netbiblio2.rpn.ch/neuc-lddr>
+- Catalogue des bibliothèques publiques romandes:  
+    <https://bib.rero.ch>
+- Catalogue des bibliothèques universitaires suisses:  
+    <https://swisscovery.slsp.ch>
+- Google Books:  
+    <https://books.google.ch>
+- Google Scholar:  
+    <https://scholar.google.ch>
+
+### Qu'est-ce qu'une bonne source?
+
+Les anglais disent "Don't judge a book by its cover". Cet adage est particulièrement vrai lorsqu'on recherche de *bonnes* références. Ce n'est pas la couverture du livre qui en dira beaucoup sur son contenu. Commencez par consulter la table des matières. Elle vous en dira beaucoup plus sur les points abordés dans l'ouvrage.
+
+Il n'est pas aisé de dire du premier coup d'oeil ce qui constitue une *bonne* ou une *mauvaise* source. Une référence qui est reprise par de nombreux autres ouvrages peut cependant être considérée comme relativement fiable. Cela dit, gardez toujours un esprit critique, même avec les meilleurs ouvrages. Lorsqu'une affirmation est contestée, demandez-vous pourquoi. Creusez lorsque les points de vue ne sont pas unanimes.
+
+## La grille de lecture
+
+Au cours de vos lectures, organisez-vous pour prendre des notes. Il vous sera impossible de vous souvenir de toutes vos lectures lorsque vous rédigerez votre TM. Essayez de synthétiser ce que vous lisez en résumant les différentes sections qui vous ont paru pertinentes.
+
+Il n'existe pas de système universel qui convienne à tout le monde. Chacun doit trouver une organisation qui lui parait efficace. La prise de note selon le système de Cornell (voir figure @fig-cornell) est cependant réputée pour son efficacité.
+
+![Prise de notes selon le système de Cornell](../pictures/cornell.png){#fig-cornell fig-align="center" width=60%}
+
+Une colonne sur la gauche permet de retenir des mot-clés concernant les notes pour retrouver les informations aisément. Une section au bas de la page permet de résumer les informations.

@@ -1,0 +1,29 @@
+# Méthodes {#sec-methodes}
+
+## Les méthodes de recherche
+
+Un bon travail de maturité ira au-delà d'une simple recherche documentaire. En effet, la synthèse de travaux existants est une partie importante d'un travail académique, mais elle ne constitue qu'une première étape pour un travail abouti.
+
+Dans le cadre d'une recherche en géographie, des méthodes qualitatives comme quantitatives s'offrent à nous. En fonction de la question de recherche, l'un ou l'autre domaine sera privilégié. Une combinaison de plusieurs méthodes est tout à fait envisageable (voir aussi @béguin2017).
+
+## Les méthodes qualitatives
+
+Les méthodes qualitatives regroupent une famille d'outil permettant d'obtenir des données qualitatives pour des phénomènes qui serait autrement difficilement mesurable. Ces outils permettent de récolter des informations permettant d'amener des éléments de réponse à la question de recherche.
+
+Parmi les méthodes qualitatives possibles dans le cadre d'un travail de maturité on retiendra principalement l'observation et l'entretien.
+
+### L'observation
+
+Suivant l'objet d'étude défini dans la problématique, l'observation s'impose comme la méthode principale permettant de décrire un phénomène. L'observation est une méthode qui se prête particulièrement bien aux sujets en rapport avec un processus spatial.
+
+### L'entretien
+
+L'entretien est un des outils principaux utilisés comme méthode qualitative. Quelle que soit la question de recherche, un entretien pourra par exemple permettre de clarifier un aspect de la problématique.
+
+Les entretiens peuvent être plus ou moins directifs: selon les informations recherchées, les questions posées peuvent être plus ou moins ouvertes. Quel que soit le type d'entretien prévu, une grille d'entretien est un bon moyen de maintenir un fil rouge cohérent lors de l'entretien.
+
+## Les méthodes quantitatives
+
+Lorsque les phénomènes observés possèdent des éléments mesurables, les méthodes quantitatives sont privilégiées. Pour de nombreux domaines, on peut avoir recours à des statistiques.
+
+Si le sujet s'y prête, un questionnaire est un moyen simple d'obtenir soi-même des données quantitatives en rapport avec l'objet de recherche.

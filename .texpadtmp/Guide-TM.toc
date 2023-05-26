@@ -1,0 +1,46 @@
+\babel@toc {french}{}
+\contentsline {chapter}{Préface}{1}{chapter*.2}%
+\contentsline {part}{\@mypartnumtocformat {I}{Mise en page et structure}}{3}{part.1}%
+\contentsline {chapter}{\numberline {1}Forme du travail}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}La mise en page}{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Le format}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}La numérotation des pages}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Les styles}{5}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Les titres et sous-titres}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Les paragraphes}{6}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Les figures et tableaux}{6}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Les règles typographiques}{6}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}La police de caractères}{6}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Les espacements}{6}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Les notes de bas de page}{6}{subsection.1.6.3}%
+\contentsline {section}{\numberline {1.7}La touche personnelle}{7}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Structure du travail}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Les chapitres}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}L'introduction}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Corps du travail}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}La problématique}{9}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}La méthodologie}{10}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}La conclusion}{10}{subsection.2.1.5}%
+\contentsline {section}{\numberline {2.2}La page de titre}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}La table des matières}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}La bibliographie}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Les annexes}{10}{section.2.5}%
+\contentsline {part}{\@mypartnumtocformat {II}{Méthodologie}}{13}{part.2}%
+\contentsline {chapter}{\numberline {3}Documentation}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Les sources}{15}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Où trouver des ouvrages?}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Qu'est-ce qu'une bonne source?}{16}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}La grille de lecture}{16}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Problématique}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Méthodes}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Les méthodes de recherche}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Les méthodes qualitatives}{21}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}L'observation}{21}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}L'entretien}{21}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Les méthodes quantitatives}{22}{section.5.3}%
+\contentsline {part}{\@mypartnumtocformat {III}{Annexes}}{23}{part.3}%
+\contentsline {chapter}{\numberline {6}Échéances}{25}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Soutenance}{27}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Évaluation}{29}{chapter.8}%
+\contentsline {chapter}{Références}{33}{chapter*.6}%
+\contentsfinish 
